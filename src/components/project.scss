@@ -1,0 +1,22 @@
+section#project {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    max-height: 100vh;
+    justify-content: center;
+    text-align: center;
+    border-bottom: 1px solid;
+    h3 {
+        padding-top: 3em;
+    }
+}
+.project-row:first-child {
+    position: absolute;
+    top: 16vh;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: stretch;
+    height: 72vh;
+    width: 100%;
+    justify-content: center;
+}

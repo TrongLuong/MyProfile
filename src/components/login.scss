@@ -1,0 +1,14 @@
+.form-login {
+    margin: 0 auto;
+    width: 30%;
+
+    button,
+    input {
+        margin-top: 1rem;
+        line-height: 3em;
+        width: 100%;
+    }
+    :last-child {
+        margin-bottom: 2rem;
+    }
+}

@@ -1,23 +1,27 @@
-import logo from './logo.svg';
-import './App.css';
-
+import Navbar from "./components/Navbar";
+import data from "./components/data";
+import "./style.scss";
+import About from "./components/About";
+import Home from "./components/Home";
+import Project from "./components/Project";
+import Experience from "./components/Experience";
+import LandingPage from "./components/LandingPage";
+import LoginForm from "./components/LoginForm";
+import Section from "./components/Section";
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="container">
+      {/* <LoginForm /> */}
+      <Navbar data={data} />
+      <Home id={data[0].name} />
+      <About id={data[1].name} />
+      <Experience id={data[2].name} />
+      <Project id={data[3].name} />
+
+      {/* {data.map((items) => {
+        return <Section title={items.name} id={items.name} key={items.id} />;
+      })} */}
+      {/* <LandingPage /> */}
     </div>
   );
 }

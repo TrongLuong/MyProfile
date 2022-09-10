@@ -1,0 +1,50 @@
+*,
+::before,
+::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans",
+        "Droid Sans", "Helvetica Neue", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+html {
+    font-size: calc(10px + 2vmin);
+    scroll-behavior: smooth;
+    // overflow-y: scroll;
+}
+section#home {
+    background: linear-gradient(bisque, cadetblue);
+    //background: url("https://source.unsplash.com/bZZp1PmHI0E/1600x900") no-repeat center center/cover;
+}
+section#about {
+    min-height: 100vh;
+    max-height: 100vh;
+    background: linear-gradient(cadetblue, darkgrey);
+    // background: url("https://source.unsplash.com/VRxo0yY-gyM/1600x900") no-repeat center center/cover;
+}
+section#experience {
+    //background-color: darkgrey;
+    min-height: 100vh;
+    max-height: 100vh;
+    background: linear-gradient(darkgrey, rgb(180, 165, 146));
+    //background: url("https://source.unsplash.com/K2tdx2mFDHc/1600x900") no-repeat center center/cover;
+}
+section#project {
+    //background-color: forestgreen;
+    min-height: 100vh;
+    max-height: 100vh;
+    background: linear-gradient(rgb(180, 165, 146) 20%, cadetblue);
+    //background: url("https://source.unsplash.com/2aAHlfDOhJM/1600x900") no-repeat center center/cover;
+}
+.container {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    color: rgb(5, 9, 13);
+
+    //margin-top: 2em;
+}
